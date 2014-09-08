@@ -1,0 +1,28 @@
+%nav.navbar.navbar-default#navbar
+  .container-fluid
+    .navbar-header
+      <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#collapsed-nav'>
+      <span class='icon-bar'></span>
+      <span class='icon-bar'></span>
+      <span class='icon-bar'></span>
+      </button>
+      %a.navbar-brand{href: 'brand'} Brand here
+    
+    .collapse.navbar-collapse#collapsed-nav
+      %ul.nav.navbar-nav.navbar-right
+        %li.active 
+          %a{href: '#'} Link
+        %li 
+          %a{href: '#'} Link
+        %li.dropdown
+          <a href='#' class='dropdown-toggle data-toggle='dropdown'>Dropdown <span class='caret'></span></a>
+          %ul.dropdown-menu
+            %li 
+              %a{href: '#'} Action
+            %li 
+              %a{href: '#'} Action 2
+            %li 
+              %a{href: '#'} Something else
+            %li.divider
+            %li 
+              %a{href: '#'} Separate Link
